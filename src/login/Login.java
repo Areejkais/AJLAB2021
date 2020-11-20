@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package login;
 
 import javafx.application.Application;
@@ -19,10 +15,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-/**
- *
- * @author HP
- */
+
 public class Login extends Application {
     
        ImageView createImageFromURL(String imageURL){
@@ -54,7 +47,7 @@ public class Login extends Application {
         hb.setSpacing(15);
         String imageURL ="https://picsum.photos/200";
         hb.getChildren().add(createImageFromURL(imageURL));
-       
+       hb.setMinSize(300, 200);
         StackPane p = new StackPane();
          p.getChildren().addAll(hb,pane);
         Scene scene = new Scene(p, 300, 200);
